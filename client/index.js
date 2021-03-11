@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const map = document.querySelector('.map');
 
   init(map);
+  /**
+   * eh extra shitt
+   */
 
   earthquakes.forEach((quake) => {
     const {
