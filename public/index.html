@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Verkefni 4</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <script src="./dist/bundle.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -16,9 +17,9 @@
           <h2>Seinustu klukkustund</h2>
           <ul>
             <li><a href="/?period=hour&type=significant">Verulegir jarðskjálftar</a></li>
-            <li><a href="/?period=hour&type=4.5">4,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=hour&type=2.5">2,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=hour&type=1.0">1,0+ á richter jarðskjálftar</a></li>
+            <li><a href="/?period=hour&type=4.5">4,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=hour&type=2.5">2,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=hour&type=1.0">1,0M+ jarðskjálftar</a></li>
             <li><a href="/?period=hour&type=all">Allir jarðskjálftar</a></li>
           </ul>
         </li>
@@ -26,9 +27,9 @@
           <h2>Seinasta dag</h2>
           <ul>
             <li><a href="/?period=day&type=significant">Verulegir jarðskjálftar</a></li>
-            <li><a href="/?period=day&type=4.5">4,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=day&type=2.5">2,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=day&type=1.0">1,0+ á richter jarðskjálftar</a></li>
+            <li><a href="/?period=day&type=4.5">4,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=day&type=2.5">2,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=day&type=1.0">1,0M+ jarðskjálftar</a></li>
             <li><a href="/?period=day&type=all">Allir jarðskjálftar</a></li>
           </ul>
         </li>
@@ -36,9 +37,9 @@
           <h2>Seinustu viku</h2>
           <ul>
             <li><a href="/?period=week&type=significant">Verulegir jarðskjálftar</a></li>
-            <li><a href="/?period=week&type=4.5">4,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=week&type=2.5">2,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=week&type=1.0">1,0+ á richter jarðskjálftar</a></li>
+            <li><a href="/?period=week&type=4.5">4,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=week&type=2.5">2,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=week&type=1.0">1,0M+ jarðskjálftar</a></li>
             <li><a href="/?period=week&type=all">Allir jarðskjálftar</a></li>
           </ul>
         </li>
@@ -46,16 +47,16 @@
           <h2>Seinasta mánuð</h2>
           <ul>
             <li><a href="/?period=month&type=significant">Verulegir jarðskjálftar</a></li>
-            <li><a href="/?period=month&type=4.5">4,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=month&type=2.5">2,5+ á richter jarðskjálftar</a></li>
-            <li><a href="/?period=month&type=1.0">1,0+ á richter jarðskjálftar</a></li>
+            <li><a href="/?period=month&type=4.5">4,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=month&type=2.5">2,5M+ jarðskjálftar</a></li>
+            <li><a href="/?period=month&type=1.0">1,0M+ jarðskjálftar</a></li>
             <li><a href="/?period=month&type=all">Allir jarðskjálftar</a></li>
           </ul>
         </li>
       </ul>
 
-      <h1 class="earthquakes_header"></h1>
-      <p class="loading hidden">Hleð gögnum...</p>
+      <h1 class="earthquakes_h1"></h1>
+      <p class="loading">Hleð gögnum...</p>
       <p class="cache"></p>
       <ul class="earthquakes">
 
@@ -68,6 +69,5 @@
       <div class="map"></div>
     </div>
   </div>
-  <script src="./dist/bundle.js"></script>
 </body>
 </html>
