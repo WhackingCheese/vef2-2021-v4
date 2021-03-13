@@ -9,7 +9,7 @@ import { router as proxyRouter } from './proxy.js';
 dotenv.config();
 
 const {
-  PORT: port = 3001,
+  PORT: port = 3000,
 } = process.env;
 
 const app = express();
@@ -42,5 +42,5 @@ function errorHandler(err, req, res, next) {
 app.use(errorHandler);
 
 app.listen(port, () => {
-  console.info(`Server running at http://localhost:${port}/`);
+  console.info(`Server running at http://$localhost:${port}/`);
 });
