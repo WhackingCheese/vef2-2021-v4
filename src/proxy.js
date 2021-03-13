@@ -14,6 +14,7 @@ router.get('/proxy', async (req, res) => {
     let result;
     let error_message;
     const start = timerStart();
+    /*
     try {
         result = await getCache(`${period}.${type}`);
     } catch(e) {
@@ -30,6 +31,7 @@ router.get('/proxy', async (req, res) => {
         });
         return;
     }
+    */
     try {
         result = await fetch(`https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/${period}_${type}.geojson`);
         if(!result.ok) {
@@ -39,7 +41,7 @@ router.get('/proxy', async (req, res) => {
             return;
         }
         result = await result.text();
-        await setCache(`${period}.${type}`, result);
+        //await setCache(`${period}.${type}`, result);
         res.json({
             data: JSON.parse(result),
             info: {
