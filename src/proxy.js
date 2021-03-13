@@ -1,8 +1,7 @@
-import { endOfDay } from 'date-fns';
 import express from 'express';
 import fetch from 'node-fetch';
 
-import { getCache, setCache } from './cache.js';
+//import { getCache, setCache } from './cache.js';
 import { timerEnd, timerStart } from './time.js';
 
 export const router = express.Router();

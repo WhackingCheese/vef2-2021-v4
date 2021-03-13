@@ -1,3 +1,4 @@
+/*
 import redis from 'redis';
 import { promisify } from 'util';
 
@@ -14,3 +15,4 @@ const asyncSet = promisify(client.set).bind(client);
 export async function setCache(key, value) {
     await asyncSet(key, value);
 }
+*/
