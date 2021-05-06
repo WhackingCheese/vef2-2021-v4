@@ -7,7 +7,6 @@ import { fileURLToPath } from 'url';
 import { router as proxyRouter } from './proxy.js';
 
 dotenv.config();
-
 const {
   PORT: port = 3001,
 } = process.env;
@@ -16,6 +15,11 @@ const app = express();
 const path = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.static(join(path, '../public')));
+
+
+
+
+
 app.use(express.static(join(path, '../node_modules/leaflet/dist')));
 
 app.use((req, res, next) => {
@@ -29,6 +33,11 @@ app.get('/', (req, res) => {
 });
 
 app.use(proxyRouter);
+
+
+
+
+
 
 function notFoundHandler(req, res, next) {
   res.status(404).json({ error: 'Síða fannst ekki' });
